@@ -1,0 +1,108 @@
+{
+	"startingRoom": "MatthewsStreet",
+	"endingRoom": "Pentagon1314",
+	"rooms": [
+		{
+			"items": ["coin"]
+		},
+		{
+			"name": "AcmOffice",
+			"description": "You are in the ACM office.  There are lots of friendly ACM people.",
+			"items": ["pizza", "swag"],
+			"directions": [
+				{
+					"directionName": "South",
+					"room": "PentagonEntry"
+				}
+			]
+		},
+		{
+			"name": "PentagonNorthHallway",
+			"description": "You are in the north hallway.  You can see Pentagon 1112 and the door toward NCSA.",
+			"directions": [
+				{
+					"directionName": "South",
+					"room": "PentagonEntry"
+				},
+				{
+					"directionName": "NorthEast",
+					"room": "Pentagon1112"
+				}
+			]
+		},
+		{
+			"name": "PentagonEntry",
+			"description": "You are in the west entry of Pentagon Center. You can see the elevator, the ACM office, and hallways to the north and east.",
+			"items": ["sweatshirt", "key"],
+			"directions": [
+				{
+					"directionName": "West",
+					"room": "MatthewsStreet"
+				},
+				{
+					"directionName": "Northeast",
+					"room": "AcmOffice"
+				},
+				{
+					"directionName": "North",
+					"room": "PentagonNorthHallway"
+				},
+				{
+					"directionName": "East",
+					"room": "PentagonEastHallway"
+				}
+			]
+		},
+		{
+			"name": "Pentagon1112",
+			"description": "You are in Pentagon 1112.  There is space for two code reviews in this room.",
+			"items": ["USB-C connector", "grading rubric"],
+			"directions": [
+				{
+					"directionName": "West",
+					"room": "PentagonNorthHallway"
+				}
+			]
+		},
+		{
+			"name": "Pentagon1314",
+			"description": "You are in Pentagon 1314.  There are happy CS 126 students doing a code review.",
+			"directions": [
+				{
+					"directionName": "North",
+					"room": "PentagonEastHallway"
+				}
+			]
+		},
+		{
+			"name": "PentagonBasement",
+			"description": "You are in the basement of Pentagon.  You see tables with students working and door to computer labs.",
+			"items": ["pencil"],
+			"directions": [
+				{
+					"directionName": "Up",
+					"room": "PentagonEastHallway"
+				}
+			]
+		},
+		{
+			"name": "PentagonEastHallway",
+			"description": "You are in the east hallway.  You can see Einstein Bros' Bagels and a stairway.",
+			"items": ["bagel", "coffee"],
+			"directions": [
+				{
+					"directionName": "West",
+					"room": "PentagonEntry"
+				},
+				{
+					"directionName": "South",
+					"room": "Pentagon1314"
+				},
+				{
+					"directionName": "Down",
+					"room": "PentagonBasement"
+				}
+			]
+		}
+	]
+}
